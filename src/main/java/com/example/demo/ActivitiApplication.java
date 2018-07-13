@@ -16,9 +16,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 //import org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration;
 import org.springframework.context.annotation.Bean;
+import org.activiti.spring.boot.SecurityAutoConfiguration;
 
 //@SpringBootApplication(exclude = SpringDataWebAutoConfiguration.class)
-@SpringBootApplication
+@SpringBootApplication(exclude = SecurityAutoConfiguration.class)
 public class ActivitiApplication {
 
 	public static void main(String[] args) {
